@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.8'
+gem 'rails', '5.1'
 
 ### FRAMEWORK ADD-ONS
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -86,7 +86,6 @@ gem 'nestive'
 gem 'slim-rails'
 # generate bootstrap form easily
 gem 'simple_form'
-gem 'simple_form-bootstrap'
 # to build nested form for has_many relationship
 # https://github.com/nathanvda/cocoon
 gem "cocoon"

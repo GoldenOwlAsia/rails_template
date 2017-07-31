@@ -16,7 +16,6 @@
 //= require turbolinks
 //= require nprogress
 //= require nprogress-turbolinks
-//= require simple_form-bootstrap
 //= require cocoon
 //= require highcharts
 //= require chartkick
