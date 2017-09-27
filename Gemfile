@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.8'
+gem 'rails', '~> 4.2.8'
 
 ### FRAMEWORK ADD-ONS
 # See https://github.com/rails/execjs#readme for more supported runtimes
