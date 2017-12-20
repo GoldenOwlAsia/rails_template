@@ -1,7 +1,6 @@
 AllCops:
   RunRailsCops: true
   Include:
-    - '**/Gemfile'
     - '**/Rakefile'
   Exclude:
     - 'bin/*'
@@ -135,6 +134,9 @@ Style/FrozenStringLiteralComment:
 
 Style/RaiseArgs:
   EnforcedStyle: compact
+
+Metrics/BlockLength:
+  Enabled: false
 
 AllCops:
   TargetRubyVersion: 2.3

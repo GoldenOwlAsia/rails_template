@@ -97,7 +97,6 @@ gem 'meta-tags'
 # process markdown text
 # gem 'redcarpet'
 
-
 ## CONTROLLERS
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -149,6 +148,7 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'spring-commands-rubocop'
 end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -157,9 +157,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop'
 end
+
 group :production do
   gem 'rails_12factor'
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'
@@ -194,8 +196,5 @@ gem 'sentry-raven'
 # to generate fake data for demo
 gem 'factory_girl_rails'
 gem 'faker'
-# manage data in DB with GUI, similar to PHPAdmin
-# should not run this for long on production
-gem 'blazer'
 # DB GUID
 gem 'rails_db'
