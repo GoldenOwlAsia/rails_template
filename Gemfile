@@ -176,18 +176,24 @@ group :test do
   gem 'timecop'
 end
 
+### monitoring tools
+group :development, :staging, :production do
+  # app monitoring
+  gem 'newrelic_rpm'
+  # frontend javascript bugs tracker
+  gem 'rollbar'
+  # bakend exception listener
+  gem 'sentry-raven'
+end
+
 ### TOOLS
 gem 'puma', '~> 3.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-# app monitoring
-gem 'newrelic_rpm'
+
 # database gem
 gem 'pg', '~> 0.18'
-# frontend javascript bugs tracker
-gem 'rollbar'
-# bakend exception listener
-gem 'sentry-raven'
+
 # if we need to schedule cronjob
 # gem 'whenever', :require => false
 # to generate fake data for demo
