@@ -5,11 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 require 'faker'
 I18n.reload!
 
-FG = FactoryGirl
+FG = FactoryBot
 
 user = FG.create :user, admin: true, email: Rails.application.secrets.admin_email, password: Rails.application.secrets.admin_password, password_confirmation: Rails.application.secrets.admin_password
 user.confirm

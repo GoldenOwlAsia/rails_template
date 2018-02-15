@@ -1,8 +1,8 @@
-require 'factory_girl_rails'
+require 'factory_bot_rails'
 require 'faker'
 I18n.reload!
 
-FG = FactoryGirl
+FG = FactoryBot
 
 namespace :data do
   desc "Generates fake data for testing"

@@ -197,7 +197,7 @@ gem 'pg', '~> 0.18'
 # if we need to schedule cronjob
 # gem 'whenever', :require => false
 # to generate fake data for demo
-gem 'factory_girl_rails'
+gem 'factory_bot_rails'
 gem 'faker'
 # manage data in DB with GUI, similar to PHPAdmin
 # should not run this for long on production
