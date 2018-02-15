@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.4.0'
+ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.1'
+gem 'rails', '5.1.4'
 
 ### FRAMEWORK ADD-ONS
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -176,18 +176,24 @@ group :test do
   gem 'timecop'
 end
 
+### monitoring tools
+group :development, :staging, :production do
+  # app monitoring
+  gem 'newrelic_rpm'
+  # frontend javascript bugs tracker
+  gem 'rollbar'
+  # bakend exception listener
+  gem 'sentry-raven'
+end
+
 ### TOOLS
 gem 'puma', '~> 3.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-# app monitoring
-gem 'newrelic_rpm'
+
 # database gem
-gem 'pg'
-# frontend javascript bugs tracker
-gem 'rollbar'
-# bakend exception listener
-gem 'sentry-raven'
+gem 'pg', '~> 0.18'
+
 # if we need to schedule cronjob
 # gem 'whenever', :require => false
 # to generate fake data for demo
