@@ -29,12 +29,28 @@ Things you may want to cover:
 
         * `...`: See `gemfile` to learn more about gems
 
+* Installation
+
+** Register an email
+
+Go to http://google.com and create an account, for example: `rails5dev@gmail.com/Abcd@3456`
+
+** Use the email to enable Google Signin
+
+Follow instructions in this gem to setup Google Sign-In: https://github.com/zquestz/omniauth-google-oauth2. In the end, you would have Oauth Client ID and Client Secret, put them into `application.yml` like below:
+````
+        GOOGLE_CLIENT_ID: 1030360174516-26e6k1j93v0h8t9hl3iidjdol13j0o1c.apps.googleusercontent.com
+        GOOGLE_CLIENT_SECRET: I4bR_ohE5UTiufTe0MxWcjAr
+````
+
 * Configuration
     `cp .env.sample .env`
 
     - Setup rollbar ENV key.
 
     `cp config/database.yml.sample config/database.yml`
+
+
 * Database creation
 
     bundle exec rake db:create DISABLE_DATABASE_ENVIRONMENT_CHECK=1

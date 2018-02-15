@@ -59,6 +59,8 @@ gem 'money-rails'
 gem 'devise'
 # randomly generate avatar
 gem "avatarly"
+gem 'omniauth-google-oauth2'
+
 # image uploader, can use to upload file to local storage or AWS S3
 gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 # handle image storing
